@@ -1,16 +1,19 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
 // Importing the top-level component
-import App from './components/App'
+import App from "./components/App";
 
 // Importing the styles
-import './styles.less'
+import "./styles.less";
 
 // 👉 STEP 1 - Import React Router's Router
 
-render(
+ReactDOM.render(
   // Wrap the <App /> in a provider
-  <App />
-  , document.querySelector('#root')
-)
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.querySelector("#root")
+);
