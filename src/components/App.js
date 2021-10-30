@@ -11,7 +11,7 @@ import Item from "./Item";
 import data from "../data";
 
 export default function App() {
-  const [stock, setStock] = useState([data]);
+  const [stock, setStock] = useState(data);
 
   return (
     <div className="App">
